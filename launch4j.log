@@ -1,0 +1,76 @@
+
+
+Version:	3.14
+CmdLine:	C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\DroneGroceryDelivery.exe --l4j-debug
+WOW64:		yes
+Java min ver:	1.008.000
+Java max ver:	
+Bundled JRE(s):	jre1.8.0_281
+Check launcher:	C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\jre1.8.0_281\bin\javaw.exe (OK)
+Launcher:	C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\jre1.8.0_281\bin\javaw.exe
+Launcher args:	-jar "C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\DroneGroceryDelivery.exe"
+Args length:	92/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\DroneGroceryDelivery.exe --l4j-debug
+WOW64:		yes
+Java min ver:	1.008.000
+Java max ver:	
+Bundled JRE(s):	jre1.8.0_281
+Check launcher:	C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\jre1.8.0_281\bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Check launcher:	C:\Program Files\Java\jdk1.8.0_271\bin\javaw.exe (OK)
+Match:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_271
+Check launcher:	C:\Program Files\Java\jdk1.8.0_271\bin\javaw.exe (OK)
+Match:		1.008.000_271
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\11.0.10
+Check launcher:	C:\Program Files\Java\jdk-11.0.10\bin\javaw.exe (OK)
+Match:		1.011.000_010
+Runtime used:	1.011.000_010 (64-bit)
+Launcher:	C:\Program Files\Java\jdk-11.0.10\bin\javaw.exe
+Launcher args:	-jar "C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\DroneGroceryDelivery.exe"
+Args length:	92/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\DroneGroceryDelivery.exe --l4j-debug
+WOW64:		yes
+Java min ver:	1.011.000
+Java max ver:	
+Bundled JRE(s):	jdk-11.0.10
+Check launcher:	C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\jdk-11.0.10\bin\javaw.exe (OK)
+Launcher:	C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\jdk-11.0.10\bin\javaw.exe
+Launcher args:	-jar "C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\DroneGroceryDelivery.exe"
+Args length:	92/32768 chars
+Exit code:	0
+
+
+Version:	3.14
+CmdLine:	C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\DroneGroceryDelivery.exe --l4j-debug
+WOW64:		yes
+Working dir:	C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\.
+Java min ver:	1.011.000
+Java max ver:	
+Bundled JRE(s):	jdk-11.0.10
+Check launcher:	C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\jdk-11.0.10\bin\javaw.exe (not found)
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_271
+Ignore:		1.008.000_271
+32-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\11.0.10
+Check launcher:	C:\Program Files\Java\jdk-11.0.10\bin\javaw.exe (OK)
+Match:		1.011.000_010
+Runtime used:	1.011.000_010 (64-bit)
+Launcher:	C:\Program Files\Java\jdk-11.0.10\bin\javaw.exe
+Launcher args:	-jar "C:\Users\nili266\Desktop\CS 4400\Drone Grocery Delivery Demo\DroneGroceryDelivery.exe"
+Args length:	92/32768 chars
+Exit code:	0
