@@ -1,5 +1,5 @@
 # Drone Grocery Delivery
-### Note: The default login credentials are of a Drone Technician
+##### Note: The default login credentials are of a Drone Technician
 ## CS4400: Introduction to Database Systems Group 6 Spring 2021
 ### Description
 This is a project based on the description given in class. The project description states all of the information necessary for each role on every screen, and we would have to create a relational database to fulfill it.
