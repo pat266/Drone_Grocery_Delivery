@@ -4,8 +4,8 @@ About: a file to test the functionality of the procedures and see if the data ha
 Direction: Run this file last.
 */
 use grocery_drone_delivery;
-select * from `admin`;
-select * from `chain`;
+select * from `ADMIN`;
+select * from `CHAIN`;
 
 -- 2.a
 CALL register_customer('testcustomers2', 'password42', 'test', 'customer', '420 Austerlitz Rd', 'Nashville', 'TN', '30319', '2254 7887 8863 3801', '863', '2021-04-01');
@@ -62,7 +62,7 @@ select * from manager;
 select * from store;
 
 select count(*) from manager where username ="RadicalEdward" or ChainName = "Wegmans";
-select count(*) from `chain` where ChainName = "Wegmans";
+select count(*) from `CHAIN` where ChainName = "Wegmans";
 
 -- 4.a.
 CALL admin_create_grocery_chain('Wegmans');

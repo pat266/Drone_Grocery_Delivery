@@ -94,17 +94,20 @@ public class Main extends Application {
         Label connectionStatus = new Label();
         connectionStatus.setFont(Font.font("Arial", 16));
         grid.add(connectionStatus, 0, 3, 2, 1);
-        // Download Connector/j to Connect MySQL to Java, download Zip Archive
-        // (https://dev.mysql.com/downloads/connector/j/) with Platform Independent as Operating System
-        String dbName = "grocery_drone_delivery";
-        String endPoint = "127.0.0.1";
 
-        String loginUser = "root";
-        String loginPass = "Samdeptrai26!";
+        String dbName, endPoint, loginUser, loginPass;
+        dbName = "grocery_drone_delivery";
+        endPoint = "database-1.cax6knv3dgtq.us-east-2.rds.amazonaws.com";
+        loginUser = "admin";
+        loginPass = "DroneGroceryDelivery";
+
+        // the port is usually 3306
         String url = "jdbc:mysql://" + endPoint + ":3306/" + dbName;
         boolean isConnected = false;
         // load up the MySQL
         try {
+            // Download Connector/j to Connect MySQL to Java, download Zip Archive
+            // (https://dev.mysql.com/downloads/connector/j/) with Platform Independent as Operating System
             connection = (Connection) DriverManager.getConnection(url, loginUser, loginPass);
             if (connection != null) {
                 isConnected = true;

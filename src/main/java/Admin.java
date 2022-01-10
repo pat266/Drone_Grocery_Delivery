@@ -33,10 +33,6 @@ public class Admin {
         this.username = username;
     }
     public Scene createAdminHome() {
-        if (connection != null) {
-            System.out.println("The connection is still there!");
-        }
-
         GridPane grid = new GridPane();
         grid.setAlignment(Pos.TOP_CENTER);
         grid.setVgap(40);
