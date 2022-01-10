@@ -8,6 +8,8 @@ This repository only includes the .exe file of the program to avoid unnecessary 
 ### How it was made
 I use JavaFX to design the front end and Java (connected to the MySQL Database by the Connector/J) for the back end. The database connected to this version is the Amazon RDS Free Tier of MySQL Community verison, so all users' changes can be seen by everyone else.
 
+I am using `mysql-connector-java-8.0.23` and `javafx-sdk-11.0.2`
+
 ### Some Login Credentials:
 #### Admin
 Username: mmoss7, password: password3
