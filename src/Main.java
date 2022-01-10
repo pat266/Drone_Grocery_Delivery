@@ -105,7 +105,6 @@ public class Main extends Application {
         boolean isConnected = false;
         // load up the MySQL
         try {
-            Class.forName("com.mysql.jdbc.Driver");
             connection = (Connection) DriverManager.getConnection(url, loginUser, loginPass);
             if (connection != null) {
                 isConnected = true;
@@ -120,11 +119,6 @@ public class Main extends Application {
             isConnected = false;
             connectionStatus.setTextFill(Color.RED);
             connectionStatus.setText("Unsuccessfully connected to the database!");
-//            Platform.runLater(() -> {
-//                Alert alert = new Alert(Alert.AlertType.ERROR);
-//                alert.setContentText("Failed to connect to the AWS database. Please contact ptran74@gatech.edu.");
-//                alert.show();
-//            });
             exception.printStackTrace();
         }
 
