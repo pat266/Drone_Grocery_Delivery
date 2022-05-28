@@ -486,7 +486,15 @@ public class Main extends Application {
             city.setText(generateWord(5));
             username.setText(generateWord(5));
             zip.setText(generateNumber(5));
-            ccNum.setText(generateNumber(16));
+            StringBuilder ccNumber = new StringBuilder();
+            String num16 = generateNumber(16);
+            for (int i = 0; i < 16; i++) {
+                if (i % 4 == 0 && i != 0) {
+                    ccNumber.append(' ');
+                }
+                ccNumber.append(num16.charAt(i));
+            }
+            ccNum.setText(ccNumber.toString());
             cvv.setText(generateNumber(3));
 
             int min_month = 1;

@@ -16,6 +16,24 @@ I use JavaFX to design the front end and Java (connected to the MySQL Database b
 
 Install `mysql-connector-java-8.0.23` and `javafx-sdk-11.0.2` to compile the code.
 
+### Visualization
+* **Entity Relationship Diagram**<br />
+<img src="visualizations/diagrams/Entity Relationship Diagram-1.png" alt="drawing"/>
+
+* When the application cannot establish a connection to the database vs. when it can <br />
+<img src="visualizations/database-fail.png" alt="drawing" width="400"/>
+<img src="visualizations/database-success.png" alt="drawing" width="400"/><br />
+
+* **Registration**<br />
+<img src="visualizations/registration.gif" alt="drawing" height=450 width="600"/>
+
+* **Admin**<br />
+<img src="visualizations/admin.gif" alt="drawing" height=450 width="600"/>
+
+* **Chain Manager**<br />
+<img src="visualizations/Chain_Manager.gif" alt="drawing" height=450 width="600"/>
+
+
 ### Contributors
 #### Aidan Perras (aperras3)
 #### Ana Belen Coronel (arodriguez328)
