@@ -921,6 +921,7 @@ public class Admin {
             public void handle(ActionEvent actionEvent) {
                 first.setText("");
                 last.setText("");
+                mainStage.setScene(viewCustomer(null, null));
             }
         });
 

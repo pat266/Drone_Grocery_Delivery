@@ -539,6 +539,7 @@ public class ChainManager {
         reset.setOnAction(e -> {
             username.setText("");
             location.setValue("");
+            mainStage.setScene(viewDroneTech(null, null));
         });
 
         // Save Button
@@ -727,6 +728,7 @@ public class ChainManager {
             public void handle(ActionEvent actionEvent) {
                 id.setText("");
                 rad.setText("");
+                mainStage.setScene(viewDrones(null, null));
             }
         });
 
@@ -947,6 +949,7 @@ public class ChainManager {
             store.setValue(null);
             rangeMin.setText("");
             rangeMax.setText("");
+            mainStage.setScene(viewDrones(null, null));
         });
 
         // Filter Button

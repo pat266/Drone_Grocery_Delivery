@@ -20,6 +20,7 @@ import javafx.stage.*;
 import java.sql.*;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.util.Random;
 
 public class Main extends Application {
     private Stage mainStage;
@@ -469,6 +470,41 @@ public class Main extends Application {
             }
         });
 
+        // Auto-fill Button
+        Button fill = new Button("Auto Fill");
+        fill.setWrapText(true);
+        fill.setMaxWidth(150);
+        fill.setPrefSize(100, 60);
+        fill.setTextAlignment(TextAlignment.CENTER);
+        fill.setFont(Font.font("Arial", FontWeight.BOLD, 16));
+        fill.setStyle("-fx-background-color: #000;");
+        fill.setTextFill(Color.WHITE);
+        fill.setOnAction(e -> {
+            firstName.setText(generateWord(5));
+            street.setText(generateWord(5));
+            lastName.setText(generateWord(5));
+            city.setText(generateWord(5));
+            username.setText(generateWord(5));
+            zip.setText(generateNumber(5));
+            ccNum.setText(generateNumber(16));
+            cvv.setText(generateNumber(3));
+
+            int min_month = 1;
+            int max_month = 12;
+            int min_year = 30;
+            int max_year = 50;
+            Random ran = new Random();
+            int month = ran.nextInt(max_month) + min_month;
+            String monthStr = null;
+            if (month < 10) {
+                monthStr = "0" + Integer.toString(month);
+            } else {
+                monthStr = Integer.toString(month);
+            }
+            int year = ran.nextInt(max_year) + min_year;
+            exp.setText(monthStr + "/" + year);
+        });
+
         // Register Button
         Button register = new Button("Register");
         register.setWrapText(true);
@@ -494,9 +530,6 @@ public class Main extends Application {
                 // Process LocalDate for today
                 LocalDate today = LocalDate.now();
                 // check if all values have been filled in
-//                System.out.println(state.getValue().chars().allMatch(Character::isLetter));
-//                System.out.println(state.getValue().length() == 2);
-
                 if (firstName.getText().isEmpty() || street.getText().isEmpty() || lastName.getText().isEmpty() ||
                         city.getText().isEmpty() || username.getText().isEmpty() || state.getValue().isEmpty() ||
                         pass.getText().isEmpty() || zip.getText().isEmpty() || confirm.getText().isEmpty() ||
@@ -721,12 +754,70 @@ public class Main extends Application {
         hbox.getChildren().add(filler);
         HBox.setHgrow(filler, Priority.ALWAYS);
 
-        hbox.getChildren().addAll(register);
+        hbox.getChildren().addAll(fill, register);
 
         borderPane.setCenter(grid);
         borderPane.setBottom(hbox);
 
         Scene scene = new Scene(borderPane, 800, 600);
         return scene;
+    }
+
+    private static String generateWord(int length) {
+        StringBuilder source = new StringBuilder();
+        // add A-Z
+        for (int i = 65; i <= 90; i++) {
+            source.append((char) i);
+        }
+        // add a-z
+        for (int i = 97; i <= 122; i++) {
+            source.append((char) i);
+        }
+        String alphabet = source.toString();
+
+        // create an object of Random class
+        Random random = new Random();
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < length; i++) {
+            // generate random index number
+            int index = random.nextInt(alphabet.length());
+
+            // get character specified by index
+            // from the string
+            char randomChar = alphabet.charAt(index);
+
+            // append the character to string builder
+            sb.append(randomChar);
+        }
+
+        String returnStr = sb.toString();
+        return returnStr;
+    }
+
+    private static String generateNumber(int length) {
+        StringBuilder source = new StringBuilder();
+        // add 0-9
+        for (int i = 0; i <= 9; i++) {
+            source.append(i);
+        }
+        String numeric = source.toString();
+
+        // create an object of Random class
+        Random random = new Random();
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < length; i++) {
+            // generate random index number
+            int index = random.nextInt(numeric.length());
+
+            // get character specified by index
+            // from the string
+            char randomChar = numeric.charAt(index);
+
+            // append the character to string builder
+            sb.append(randomChar);
+        }
+
+        String returnStr = sb.toString();
+        return returnStr;
     }
 }
